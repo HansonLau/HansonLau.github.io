@@ -13,7 +13,7 @@ p{
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 2em;
+    font-size: 200%;
 }
 
 .header{
@@ -25,14 +25,14 @@ p{
     margin: 0;
     padding:0;
     width: 100%;
-    height: 49em;
+    height: 100%;
     background-image: url(./images/head-back.JPG);
     background-size: cover;
     opacity: .80;
     position: fixed;
     border-bottom: .5em solid;
-    border-color: rgb(240, 237, 230);
-    z-index: 0;
+    /* border-color: rgb(240, 237, 230); */
+    /* z-index: 0; */
 }
 
 .header{
@@ -40,16 +40,17 @@ p{
 }
 
 .name{
-    margin-left: 1.67em;
+    /* margin-left: 1.67em; */
+    margin-left: 10%;
     font-family: sans-serif;
-    font-size: 7em;
+    font-size: 700%;
     text-align: left;
     position: fixed;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 #firstName{
-    margin-top: 1.8em;
+    margin-top: 40%;
     background-color: #000000;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -59,7 +60,7 @@ p{
 }
 
 #lastName{
-    margin-top: .3em;
+    margin-top: 10%;
     background-color: #000000;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -69,20 +70,29 @@ p{
 }
 
 .header-picture{
-    z-index: 2;
-    margin-top: 10em;
-    margin-left: 68em;
+    /* z-index: 2; */
+    max-width: 25%;   
+    height: auto;     
+    margin: 0;
+    padding: 0;
+    margin-top: 13%;
+    margin-left: 70%;
     position: fixed;
     box-shadow: rgba(128, 128, 128, 0.562) 40px 40px;
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 970px) { /* smalelr screen */
+
+    .header-picture{
+        display: none;
+    }
     #firstName{
-        margin-right: 0em;
+        margin-top: 5%;
+        margin-left: 0;
     }
 
     #lastName{
-        margin-right: 0em;
+        margin-right: 0;
     }
 }
 
@@ -101,19 +111,19 @@ p{
 
 .item a{
     box-sizing: border-box;
-    padding: .2em;
-    padding-top: .5em;
+    padding: 50%;
+    padding-top: 10%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 2em;
+    font-size: 100%;
     text-decoration: none;
     color: white;
     display: block;
 }
 
 #line{
-    padding: .2em;
+    padding: 100%;
     font-family: sans-serif;
-    font-size: 3em;
+    font-size: 100%;
     color: white;
     display: block;
 }
@@ -121,22 +131,22 @@ p{
 @media only screen and (max-width: 890px) {
     .item a{
         text-align: center;
-        font-size: 1.7em;
+        font-size: 100%;
     }
 }
 @media only screen and (max-width: 525px) { /* phone */
     .item a{
-        padding-top: 1em;
+        padding-top: 10%;
         text-align: center;
-        font-size: 1.2em;
+        font-size: 100%;
     }
     
     .schools{
         text-align: center;
-        font-size: .1em;
+        font-size: 80%;
     }
     .name{
-        margin-left: .35em;
+        margin-left: 10%;
     }
 }
 
@@ -167,16 +177,16 @@ p{
 }
 
 .usernames{
-    margin-top: 35em;
-    margin-left: 1em;
+    margin-top: 200%;
+    margin-left: 10%;
     list-style-type: none;
     position: relative;
     background-color: rgba(233, 150, 122, 0.308);
     color: black;
-    width: 23em;
+    width: 50%;
     box-sizing: border-box;
-    padding-left: 1em;
-    line-height: 4em;
+    padding-left: 10%;
+    line-height: 100%;
 }
 
 .u-item{
@@ -203,7 +213,7 @@ p{
 }
 
 .descriptions{
-    margin-top: 2em;
+    margin-top: 10%;
     position: absolute;
     z-index: 2;
     /* margin-top: 49em; */
@@ -223,21 +233,21 @@ p{
     padding: 0;
     display: flexbox;
     text-align: center;
-    font-size: 5em;
+    font-size: 100%;
 }
 
 .descriptions p{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2em;
-    margin-left:2em;
-    margin-right:2em;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
     text-align: justify;
-    text-indent: 4em;
+    text-indent: 100%;
 }
 
 .schools{
-    font-size: 4em;
-    margin-top: 2em;
+    font-size: 100%;
+    margin-top: 10%;
     display: flex;
     list-style-type: none;
     justify-content: space-evenly;
@@ -267,7 +277,7 @@ p{
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    font-size: 1.1em;
+    font-size: 80%;
     transition: all 1s ease;
 }
 .under{
@@ -275,30 +285,30 @@ p{
 }
 .education-list{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 0.5em;
-    margin-left:2em;
-    margin-right:2em;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
     /* text-align: center; */
-    text-indent: 4em;
-    font-size: 2em;
+    text-indent: 100%;
+    font-size: 80%;
 }
 
 
 .gpa{
-    margin-top: 1em;
+    margin-top: 5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     list-style-type: none;
     display: flex;
     text-align: center;
-    font-size: 2em;
+    font-size: 80%;
     justify-content: space-evenly;
 }
 
 #B{
     text-align: center;
     list-style-type: none;
-    font-size: 4em;
-    margin-top: 2em;
+    font-size: 100%;
+    margin-top: 10%;
     text-shadow: rgba(180, 154, 5, 0.959) 0px 4px 6px;
 }
 
@@ -313,15 +323,15 @@ p{
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    font-size: 1.1em;
+    font-size: 80%;
     transition: all 1s ease;
 }
 
 #S{
     text-align: center;
     list-style-type: none;
-    font-size: 4em;
-    margin-top: 2em;
+    font-size: 100%;
+    margin-top: 10%;
     text-shadow: rgba(180, 154, 5, 0.959) 0px 4px 6px;
     margin-bottom: 2em;
 }
@@ -337,12 +347,12 @@ p{
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
-    font-size: 1.1em;
+    font-size: 180%;
     transition: all 1s ease;
 }
 
 #education, #experience, #extra{
-    margin-top: 2em;
+    margin-top: 10%;
 }
 
 
