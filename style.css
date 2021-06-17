@@ -13,7 +13,7 @@ p{
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .header{
@@ -30,8 +30,8 @@ p{
     background-size: cover;
     opacity: .80;
     position: fixed;
-    border-bottom: .5em solid;
-    /* border-color: rgb(240, 237, 230); */
+    /* border-bottom: 2% solid;
+    border-color: rgb(83, 122, 109); */
     /* z-index: 0; */
 }
 
@@ -40,60 +40,50 @@ p{
 }
 
 .name{
-    /* margin-left: 1.67em; */
     margin-left: 10%;
     font-family: sans-serif;
-    font-size: 700%;
+    font-size: 750%;
     text-align: left;
     position: fixed;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 #firstName{
-    margin-top: 40%;
+    margin-top: 45%;
     background-color: #000000;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: rgba(255, 255, 255, 0.315) 0px 4px 6px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 4px 6px;
 }
 
 #lastName{
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: #000000;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: rgba(255, 255, 255, 0.315) 0px 4px 6px;
+    text-shadow: rgba(255, 255, 255, 0.3) 0px 4px 6px;
 }
 
 .header-picture{
     /* z-index: 2; */
-    max-width: 25%;   
-    height: auto;     
-    margin: 0;
-    padding: 0;
-    margin-top: 13%;
-    margin-left: 70%;
+    margin-top: 15%;
+    margin-left: 68em;
     position: fixed;
-    box-shadow: rgba(128, 128, 128, 0.562) 40px 40px;
+    box-shadow: rgba(128, 128, 128, 0.733) 30px 30px;
 }
 
-@media only screen and (max-width: 970px) { /* smalelr screen */
-
-    .header-picture{
-        display: none;
-    }
-    #firstName{
-        margin-top: 5%;
-        margin-left: 0;
+@media only screen and (max-width: 970px) {
+    /* #firstName{
+        margin-right: 0em;
     }
 
     #lastName{
-        margin-right: 0;
-    }
+        margin-right: 0em;
+    } */
 }
 
 .navigation{
@@ -102,56 +92,55 @@ p{
     background-color: rgb(58, 57, 57);
     list-style-type: none;
     width: 100%;
-    height: 10%;
+    height: 5%;
     position: fixed;
     display: flex;
     justify-content: space-evenly;
-    z-index: 3;
+    z-index: 2;
 }
 
 .item a{
     box-sizing: border-box;
-    padding: 50%;
-    padding-top: 10%;
+    padding-top: 1.5%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 100%;
+    font-size: 150%;
     text-decoration: none;
     color: white;
     display: block;
 }
 
 #line{
-    padding: 100%;
+    padding-top: .3%;
     font-family: sans-serif;
-    font-size: 100%;
+    font-size: 150%;
     color: white;
     display: block;
 }
 
 @media only screen and (max-width: 890px) {
-    .item a{
+    /* .item a{
         text-align: center;
-        font-size: 100%;
-    }
+        font-size: 1.7em;
+    } */
 }
 @media only screen and (max-width: 525px) { /* phone */
-    .item a{
-        padding-top: 10%;
+    /* .item a{
+        padding-top: 1em;
         text-align: center;
-        font-size: 100%;
+        font-size: 1.2em;
     }
     
     .schools{
         text-align: center;
-        font-size: 80%;
+        font-size: .1em;
     }
     .name{
-        margin-left: 10%;
-    }
+        margin-left: .35em;
+    } */
 }
 
 .item a:hover{
-    color: rgb(196, 143, 52);
+    color: rgb(52, 196, 141);
     transition-duration: 2ms;
 }
 
@@ -165,28 +154,29 @@ p{
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
-    z-index:2;
+    z-index:1;
 }
 
 .logos{
     list-style-type: none;
-    margin-top: 35em;
+    margin-top: 383%;
     margin-left: 5em;
     position: relative;
-    line-height: 4em;
+    line-height: 400%;
 }
 
 .usernames{
-    margin-top: 200%;
+    margin-top: 243%;
     margin-left: 10%;
     list-style-type: none;
     position: relative;
     background-color: rgba(233, 150, 122, 0.308);
+    border-radius: 5%;
     color: black;
-    width: 50%;
+    width: 115%;
     box-sizing: border-box;
-    padding-left: 10%;
-    line-height: 100%;
+    padding-left: 4%;
+    line-height: 410%;
 }
 
 .u-item{
@@ -205,23 +195,23 @@ p{
 
 .s-item a:hover{
     -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
 }
 
 .descriptions{
-    margin-top: 10%;
+    margin-top: 5%;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     /* margin-top: 49em; */
     /* margin-left: 1em;
     margin-right: 1em; */
     
     padding: 0; 
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(231, 237, 255, 0.945);
     border-color:  rgba(35, 133, 96, 0);
     border-style: solid;
     border-width: 2px;
@@ -233,20 +223,43 @@ p{
     padding: 0;
     display: flexbox;
     text-align: center;
-    font-size: 100%;
+    font-size: 300%;
 }
 
-.descriptions p{
+.descriptions p{ /* temp */
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 10%;
+    margin-top: 5%;
     margin-left: 10%;
     margin-right: 10%;
     text-align: justify;
-    text-indent: 100%;
+    text-indent: 5%;
+}
+.about-me p{
+   
+}
+
+.education h2{
+
+    padding-top: 5%;
+    margin-left: 5%;
+    font-size: 150%;
+    text-decoration: underline;
+}
+
+.education p{
+ 
+}
+
+.experience p{
+    
+}
+
+.extra p{
+ 
 }
 
 .schools{
-    font-size: 100%;
+    font-size: 400%;
     margin-top: 10%;
     display: flex;
     list-style-type: none;
@@ -273,42 +286,59 @@ p{
 
 .schools a:hover{
     -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    font-size: 80%;
-    transition: all 1s ease;
-}
-.under{
-    text-decoration: underline;
-}
-.education-list{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    /* text-align: center; */
-    text-indent: 100%;
-    font-size: 80%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    font-size: 110%;
+    transition: all .5s ease;
 }
 
-
-.gpa{
-    margin-top: 5%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.education-title-flex{
     list-style-type: none;
     display: flex;
-    text-align: center;
-    font-size: 80%;
     justify-content: space-evenly;
+}
+.education-list-flex{
+    list-style-type: none;
+    display: flex;
+
+}
+
+.education ul{
+    width: 100%;
+}
+
+.ap-title{
+    /* padding-left: 10%; */
+}
+
+.gpa-title{
+    /* padding-left: 10%; */
+
+}
+
+.ap-list{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1%;
+    padding-left: 20%;
+    text-indent: 1%;
+    font-size: 150%;
+}
+
+.gpa{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 1%;
+    padding-left: 10%;
+    text-indent: 1%;
+    font-size: 150%;
 }
 
 #B{
     text-align: center;
     list-style-type: none;
-    font-size: 100%;
-    margin-top: 10%;
+    font-size: 4em;
+    margin-top: 2em;
     text-shadow: rgba(180, 154, 5, 0.959) 0px 4px 6px;
 }
 
@@ -319,19 +349,19 @@ p{
 
 #B a:hover{
     -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    font-size: 80%;
-    transition: all 1s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    font-size: 110%;
+    transition: all .5s ease;
 }
 
 #S{
     text-align: center;
     list-style-type: none;
-    font-size: 100%;
-    margin-top: 10%;
+    font-size: 4em;
+    margin-top: 2em;
     text-shadow: rgba(180, 154, 5, 0.959) 0px 4px 6px;
     margin-bottom: 2em;
 }
@@ -343,16 +373,30 @@ p{
 
 #S a:hover{
     -webkit-filter: brightness(50%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    font-size: 180%;
-    transition: all 1s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    font-size: 110%;
+    transition: all .5s ease;
+}
+
+#about{
+    padding-top: 3%;
 }
 
 #education, #experience, #extra{
-    margin-top: 10%;
+    margin-top: 5%;
+    padding-top: 3%;
 }
 
+.footer{
+    background-color: rgb(27, 26, 26);
+    color: white;
+    margin: 0;
+    padding-left: 37.5%;
+    text-align: center;
+    font-size: 50%;
+    z-index: 1;
+}
 
