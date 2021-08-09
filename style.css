@@ -173,7 +173,7 @@
     align-items: center;
     margin-top: 45rem;
     background: rgb(34, 34, 34);
-    padding-bottom: 20rem;
+    padding-bottom: 15rem;
 }
  
 /* lines between each section */
@@ -183,7 +183,7 @@ hr{
     margin-bottom: 7px;  
     margin-right: auto;  
     margin-left: auto;  
-    margin-top: 10rem;  
+    margin-top: 5rem;  
     border-width: 2px;  
     border-color: rgb(112, 139, 125);  
     
@@ -193,7 +193,7 @@ hr{
 .about{
     align-items: center;
     display: flex;
-    margin-top: 6rem;
+    margin-top: 1rem;
     justify-content: space-evenly;
     padding-top: 3rem;
     padding-left: 2rem;
@@ -269,7 +269,7 @@ hr{
 .education{
     align-items: center;
     display: flex;
-    margin-top: 6rem;
+    margin-top: 1rem;
     justify-content: space-evenly;
     padding-top: 3rem;
     padding-left: 2rem;
@@ -433,7 +433,7 @@ hr{
  
 .experience{
     display: flex;
-    margin-top: 6rem;
+    margin-top: 1rem;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 3rem;

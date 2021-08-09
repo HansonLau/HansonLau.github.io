@@ -15,18 +15,18 @@ const lightUp = () => {
             about.classList.remove('light');
             return;
         }
-        else if(window.scrollY < 1150){
+        else if(window.scrollY < 1100){
             about.classList.add('light');
             education.classList.remove('light');
             return;
         }
-        else if(window.scrollY < 2450){
+        else if(window.scrollY < 1950){
             about.classList.remove('light');
             education.classList.add('light');
             experience.classList.remove('light');
             return;
         }
-        else if(window.scrollY > 2700){
+        else if(window.scrollY > 2300){
             education.classList.remove('light');
             experience.classList.add('light');
             return;
