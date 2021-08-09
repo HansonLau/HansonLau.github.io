@@ -1,25 +1,87 @@
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth; 
 }
-
-p{
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 150%;
+ 
+.navbar{
+    background: black;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 4;
 }
-
+ 
+.navbarContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+ 
+#name{
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #16e003 0%, #367bfa 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+ 
+.navbarOptions{
+    display: flex;
+    align-items: cneter;
+    list-style: none;
+}
+ 
+.items{
+    height: 60px;
+}
+ 
+.links{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px; /* change later */
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+ 
+.links:hover{
+    color: rgba(88, 247, 173, 0.856);
+    transition: all 0.3s ease;
+}
+ 
+.light {  /*light at bottom of certain section in nav bar */
+    border-bottom: 3px solid #16e003;
+}
+ 
+/* screen break adjustments for navbar */
+ 
+ 
+/* header (name, picture, socials) added in from old code*/
 .header{
     margin: 0;
 }
-
+ 
 .header-background{
     top:0;
     margin: 0;
@@ -32,24 +94,24 @@ p{
     position: fixed;
     /* border-bottom: 2% solid;
     border-color: rgb(83, 122, 109); */
-    /* z-index: 0; */
+    z-index: -2;
 }
-
+ 
 .header{
     display: inline-flex;
 }
-
+ 
 .name{
     margin-left: 10%;
     font-family: sans-serif;
     font-size: 750%;
     text-align: left;
     position: fixed;
-    z-index: 1;
+    z-index: -1;
 }
-
+ 
 #firstName{
-    margin-top: 45%;
+    margin-top: 70px;
     background-color: #000000;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -57,9 +119,9 @@ p{
     color: transparent;
     text-shadow: rgba(255, 255, 255, 0.3) 0px 4px 6px;
 }
-
+ 
 #lastName{
-    margin-top: 5%;
+    margin-top: 20px;
     background-color: #000000;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -67,336 +129,381 @@ p{
     color: transparent;
     text-shadow: rgba(255, 255, 255, 0.3) 0px 4px 6px;
 }
-
+ 
+@media screen and (max-width: 1380px){ /*hides picture if screen gets too small */
+    .header-picture{
+        display: none;
+    }
+}
+ 
+@media screen and (max-width: 715px){ /*decreaes font size of name when screen gets smaller */
+    .name{
+        margin-left: 10%;
+        font-family: sans-serif;
+        font-size: 425%;
+        text-align: left;
+        position: fixed;
+        z-index: -1;
+    }
+ 
+    #name{
+        font-size: 1.5rem;
+    }
+ 
+    .links{
+        font-size: 1rem;
+    }
+ 
+    .usernames{
+        font-size: .6rem;
+    }
+ 
+}
+ 
 .header-picture{
-    /* z-index: 2; */
-    margin-top: 15%;
+    z-index: -1;
+    margin-top: 100px;
     margin-left: 68em;
     position: fixed;
     box-shadow: rgba(128, 128, 128, 0.733) 30px 30px;
 }
-
-@media only screen and (max-width: 970px) {
-    /* #firstName{
-        margin-right: 0em;
-    }
-
-    #lastName{
-        margin-right: 0em;
-    } */
+ 
+/* Background of the texts */
+.backPage{
+    align-items: center;
+    margin-top: 45rem;
+    background: rgb(34, 34, 34);
+    padding-bottom: 20rem;
 }
-
-.navigation{
-    top:0;
-    margin:0;
-    background-color: rgb(58, 57, 57);
-    list-style-type: none;
-    width: 100%;
-    height: 5%;
-    position: fixed;
-    display: flex;
-    justify-content: space-evenly;
-    z-index: 2;
-}
-
-.item a{
-    box-sizing: border-box;
-    padding-top: 1.5%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 150%;
-    text-decoration: none;
-    color: white;
-    display: block;
-}
-
-#line{
-    padding-top: .3%;
-    font-family: sans-serif;
-    font-size: 150%;
-    color: white;
-    display: block;
-}
-
-@media only screen and (max-width: 890px) {
-    /* .item a{
-        text-align: center;
-        font-size: 1.7em;
-    } */
-}
-@media only screen and (max-width: 525px) { /* phone */
-    /* .item a{
-        padding-top: 1em;
-        text-align: center;
-        font-size: 1.2em;
-    }
+ 
+/* lines between each section */
+hr{ 
+    width: 60%;  
+    height: 0rem;  
+    margin-bottom: 7px;  
+    margin-right: auto;  
+    margin-left: auto;  
+    margin-top: 10rem;  
+    border-width: 2px;  
+    border-color: rgb(112, 139, 125);  
     
-    .schools{
-        text-align: center;
-        font-size: .1em;
-    }
-    .name{
-        margin-left: .35em;
-    } */
-}
-
-.item a:hover{
-    color: rgb(52, 196, 141);
-    transition-duration: 2ms;
-}
-
-#name-top a:hover{
-    color: rgb(52, 196, 141);
-    transition-duration: 2ms;
-}
-
-.social{
+}  
+ 
+/* About section */
+.about{
+    align-items: center;
     display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    z-index:1;
+    margin-top: 6rem;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-
-.logos{
-    list-style-type: none;
-    margin-top: 383%;
-    margin-left: 5em;
-    position: relative;
-    line-height: 400%;
+ 
+.aboutText{
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    /* top: 50%; */
 }
-
-.usernames{
-    margin-top: 243%;
-    margin-left: 10%;
-    list-style-type: none;
-    position: relative;
-    background-color: rgba(233, 150, 122, 0.308);
-    border-radius: 5%;
-    color: black;
-    width: 115%;
-    box-sizing: border-box;
-    padding-left: 4%;
-    line-height: 410%;
+ 
+.aboutMe{
+    color: white;
+    font-size: 4rem;
+    /* top: 50%; */
+ 
 }
-
-.u-item{
-    display: block;
+ 
+/*socials */
+ 
+.socialLogos{
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    background: rgb(90, 90, 90);
+    width: 80%;
+    list-style: none;
+    padding: 1rem 0;
 }
-
-.u-item a{
+ 
+.usernames{ 
+    color: white;
+}
+.usernames a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
-.u-item a:hover{
+ 
+.usernames a:hover{
     color: rgba(0, 0, 0, 0.288);
     transition-duration: 2ms;
 }
-
-.s-item a:hover{
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease;
-}
-
-.descriptions{
-    margin-top: 5%;
-    position: absolute;
-    z-index: 1;
-    /* margin-top: 49em; */
-    /* margin-left: 1em;
-    margin-right: 1em; */
-    
-    padding: 0; 
-    background-color: rgba(231, 237, 255, 0.945);
-    border-color:  rgba(35, 133, 96, 0);
-    border-style: solid;
-    border-width: 2px;
-}
-
-.descriptions h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    /* margin-top: 2em; */
-    padding: 0;
-    display: flexbox;
-    text-align: center;
-    font-size: 300%;
-}
-
-.descriptions p{ /* temp */
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-    text-align: justify;
-    text-indent: 5%;
-}
-.about-me p{
-   
-}
-
-.education h2{
-
-    padding-top: 5%;
-    margin-left: 5%;
-    font-size: 150%;
-    text-decoration: underline;
-}
-
-.education p{
  
-}
-
-.experience p{
-    
-}
-
-.extra p{
- 
-}
-
-.schools{
-    font-size: 400%;
-    margin-top: 10%;
-    display: flex;
-    list-style-type: none;
-    justify-content: space-evenly;
-    text-decoration: none;
-}
-
-.schools a{
-    text-decoration: none;
-    color: black;
-}
-
-#C{
-    text-shadow: rgba(62, 89, 163, 0.945) 0px 4px 6px;
-}
-
-#DV{
-    text-shadow: rgba(112, 58, 58, 0.767) 0px 4px 6px;
-}
-
-#MV{
-    text-shadow: rgba(138, 14, 14, 0.938) 0px 4px 6px;
-}
-
-.schools a:hover{
+.logos a:hover{
     -webkit-filter: brightness(50%);
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -o-transition: all .5s ease;
     -ms-transition: all .5s ease;
-    font-size: 110%;
     transition: all .5s ease;
 }
-
-.education-title-flex{
-    list-style-type: none;
+ 
+@media screen and (max-width: 715px){ /*decreaes font size of name when screen gets smaller */
+    .aboutMe{
+        font-size: 3rem;
+    }
+ 
+    .aboutText{
+        font-size: 1rem;
+    }
+ 
+}
+ 
+/*Education section*/
+ 
+.education{
+    align-items: center;
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.educationTitle{
+    color: white;
+    font-size: 4rem;
+    top: 50%;
+}
+ 
+.educationText{
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    top: 50%;
+}
+ 
+/* AP scores and high school GP */
+ 
+.highschoolContainer{
+    margin-top: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    background: rgb(90, 90, 90);
+    width: 80%;
+    padding: 4rem 0;
+ 
+}
+ 
+/* ap section */
+.apSection{
+    padding: 0 4rem;
+    color: white;
     display: flex;
     justify-content: space-evenly;
-}
-.education-list-flex{
-    list-style-type: none;
-    display: flex;
-
-}
-
-.education ul{
+    align-items: center;
     width: 100%;
 }
-
-.ap-title{
-    /* padding-left: 10%; */
+ 
+/* hs gpa section */
+.hsgpaSection{
+    margin-top: 3rem;
+    padding: 0 4rem;
+    color: white;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+    width: 100%;
+ 
 }
-
-.gpa-title{
-    /* padding-left: 10%; */
-
-}
-
+ 
 .ap-list{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 1%;
-    padding-left: 20%;
-    text-indent: 1%;
-    font-size: 150%;
-}
-
-.gpa{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 1%;
-    padding-left: 10%;
-    text-indent: 1%;
-    font-size: 150%;
-}
-
-#B{
-    text-align: center;
     list-style-type: none;
-    font-size: 4em;
-    margin-top: 2em;
-    text-shadow: rgba(180, 154, 5, 0.959) 0px 4px 6px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
 }
-
-#B a{
+ 
+.hsgpa{
+    list-style-type: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+}
+ 
+.schoolsAttended{
+    margin-top: 3rem;
+    padding: 0 4rem;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+}
+ 
+.schools{
+    margin-top: 5rem;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+}
+ 
+.cr{
+    padding: 1rem;
+    background: rgb(66, 66, 66);
+}
+ 
+.cr a{
     text-decoration: none;
+    color: white;
+    background: linear-gradient(to left, rgb(66, 66, 66) 50%, rgb(59, 192, 236) 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+ 
+}
+ 
+.cr a:hover{
+    background-position: left;
     color: black;
 }
-
-#B a:hover{
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    font-size: 110%;
-    transition: all .5s ease;
+ 
+.dv{
+    padding: 1rem;
+    background: rgb(66, 66, 66);
 }
-
-#S{
-    text-align: center;
-    list-style-type: none;
-    font-size: 4em;
-    margin-top: 2em;
-    text-shadow: rgba(180, 154, 5, 0.959) 0px 4px 6px;
-    margin-bottom: 2em;
-}
-
-#S a{
+.dv a{
     text-decoration: none;
+    color: white;
+    background: linear-gradient(to left, rgb(66, 66, 66) 50%, rgb(187, 153, 4) 50%) right;
+    background-size: 201%;
+    transition: .5s ease-out;
+}
+ 
+.dv a:hover{
+    background-position: left;
     color: black;
 }
-
-#S a:hover{
-    -webkit-filter: brightness(50%);
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    font-size: 110%;
-    transition: all .5s ease;
+ 
+.mv{
+    padding: 1rem;
+    background: rgb(66, 66, 66);
 }
-
-#about{
-    padding-top: 3%;
+ 
+.mv a{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to left, rgb(66, 66, 66) 50%, rgb(236, 59, 59) 50%) right;
+    background-size: 201%;
+    transition: .5s ease-out;
 }
-
-#education, #experience, #extra{
-    margin-top: 5%;
-    padding-top: 3%;
+ 
+.mv a:hover{
+    background-position: left;
+    color: black;
 }
-
+ 
+@media screen and (max-width: 715px){ /*decreaes font size of name when screen gets smaller */
+    .schools{
+        margin-top: 5rem;
+        display: flex;
+        color: white;
+        list-style-type: none;
+        justify-content: space-evenly;
+        font-size: .5rem;
+    }
+ 
+    .educationTitle{
+        font-size: 3rem;
+    }
+ 
+    .educationText{
+        font-size: 1rem;;
+    }
+ 
+}
+ 
+/* Experience section*/
+ 
+.experience{
+    display: flex;
+    margin-top: 6rem;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+ 
+.experienceTitle{
+    color: white;
+    font-size: 4rem;
+    top: 50%;
+}
+ 
+.experienceText{
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+    top: 50%;
+}
+ 
+.karateContainer{
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background: rgb(90, 90, 90);
+    width: 80%;
+    padding: 4rem 0;
+}
+ 
+.expTitle{
+    color:white;
+}
+ 
+.karate{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+.yt{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ 
+.web:hover{
+    opacity: 35%;
+    transform: scale(1.2);
+    transition: .5s ease;
+}
+ 
+@media screen and (max-width: 715px){ /*decreaes font size of name when screen gets smaller */
+ 
+    .experienceTitle{
+        font-size: 3rem;
+    }
+ 
+    .experienceText{
+        font-size: 1rem;;
+    }
+ 
+}
+ 
+/* footer */
 .footer{
     background-color: rgb(27, 26, 26);
     color: white;
-    margin: 0;
-    padding-left: 37.5%;
     text-align: center;
-    font-size: 50%;
-    z-index: 1;
+    font-size: 60%;
 }
-

@@ -2,77 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="\images\logo.png">
     <link rel="stylesheet" href="style.css">
     <title>Hanson Lau</title>
-
 </head>
 <body>
-    <!-- Navigation bar-->
-    <div>
-       <ul class="navigation">
-            <li class="item" id="name-top"><a href=#top>Hanson Lau</a></li>
-            <li id="line"> | </li>
-            <li class="item"><a href=#about>About Me</a></li>   
-            <li class="item"><a href=#education>Education</a></li>
-            <li class="item"><a href=#experience>Experience</a></li>
-            <li class="item"><a href=#extra>Extra</a></li>
-        </ul>
-    </div>
-
+ 
+    <!-- nav bar sticks to the top, make bottom of each section light up when the
+    screen is at that position-->
+ 
+    <nav class="navbar">
+        <div class="navbarContainer"> 
+            <a href="#top" id="name">Hanson Lau</a>
+            <div class="menuButton" id="mobileMenu">
+                <!-- three lines for menu button-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+ 
+            <ul class="navbarOptions">
+                <li class="items">
+                    <a href="#about" class="links" id="aboutPage">About</a>
+                </li>
+                <li class="items">
+                    <a href="#education" class="links" id="educationPage">Education</a>
+                </li>
+                <li class="items">
+                    <a href="#experience" class="links" id="experiencePage">Experience</a>
+                </li>
+            </ul>
+ 
+        </div>
+    </nav>
+ 
+    <!-- Huge name, pictures-->
+ 
     <section class="header" id="top">
         <div class="header-background">
             
         </div>
-
+ 
         <div class="name">
-            <h1 id=firstName>Hanson</h1>
-            <h1 id=lastName>Lau</h1>
+            <h1 id="firstName">Hanson</h1>
+            <h1 id="lastName">Lau</h1>
         </div>
-
+ 
         <div class="header-picture">
             <img src="./images/Senior_photo.jpg">
         </div>
-
-      
-            <div class="social">
-                <ul class="logos">
-                    <li class="s-item"><a href="https://www.instagram.com/hammylau7/" target="_blank"><img src="images/instagram.png"></a></li>
-                    <li class="s-item"> <img src="images/snapchat.png"></li>
-                    <li class="s-item"><a href="http://www.gmail.com/"target="_blank"><img src="images/email.png"></a></li> 
-                 </ul>
-            </div>
-            <div class="social">
-                <ul class="usernames">
-                    <li class="u-item"><a href="https://www.instagram.com/hammylau7/"target="_blank"><p>hammylau7 (Hanson Lau)</p></a></li>
-                    <li class="u-item"><p>chopchop6 (Hanson Lau)</p></li>
-                    <li class="u-item"><a href="http://www.gmail.com/"target="_blank"><p>hansonlau7@gmail.com</p></a></li>
-                </ul>
-            </div>
-
-
-
+ 
     </section>
-
-    <div class="descriptions">
-        <section class="about-me">
-            <h1 id="about">About Me</h1>
-            <p>
-            I'm Hanson Lau, 17, and currently a senior at Monte Vista High School. I'm interested in the subject of Computer Science and intend to study for it in college. My primary language is English, but I know conversational Cantonese (spoken at home). I like to practice karate in my free time and play badminton. I also enjoy playing video games with friends. 
+ 
+    <div class="backPage">
+ 
+        <hr id="about">  
+ 
+        <!-- include age, name, interests-->
+        <div class="about">
+ 
+            <h1 class="aboutMe" >About Me</h1>
+            <p class="aboutText">I'm Hanson Lau, 17, and will be a freshman attending UC Davis in the fall of 2021. I'm interested in the subject of Computer Science and intend to study for it as my major. My primary language is English, but I know conversational Cantonese (spoken at home). I like to practice karate in my free time and play badminton. I also enjoy playing video games with friends. If you would like to reach out to me or connect, you can reach me with these accounts:
             </p>
-        </section>
-
-        <section class="education">
-            <h1 id="education">Education</h1>
-            <p> I have attended Creekside Elementary School, Diablo Vista Middle School, and Monte Vista High School. Being an AP scholar, I have taken 8 AP courses.</p> 
-
-            <div class="education-title-flex">
-                <h2 class="ap-title">List of AP courses taken:</h2>
-                <h2 class="gpa-title">GPA (High School):</h2>
+ 
+        </div>
+ 
+        <!-- social media accounts-->
+        <ul class="socialLogos">
+            <div class="insta">
+                <li class="logos"><a href="https://www.instagram.com/hammylau7/" target="_blank"><img src="images/instagram.png"></a></li>
+                <li class="usernames"><a href="https://www.instagram.com/hammylau7/"target="_blank"><p>hammylau7 (Hanson Lau)</p></a></li>
             </div>
-
-            <div class="education-list-flex">
-                
+            <div class="snap">
+                <li class="logos"> <a href="https://app.snapchat.com/web/deeplink/snapcode?username=chopchop6&type=SVG&size=240"target="_blank"><img src="images/snapchat.png"></a></li>
+                <li class="usernames"><a href="https://app.snapchat.com/web/deeplink/snapcode?username=chopchop6&type=SVG&size=240"target="_blank"><p>chopchop6 (Hanson Lau)</p></a></li>
+            </div>
+            <div class="email">
+                <li class="logos"><a href="http://www.gmail.com/"target="_blank"><img src="images/email.png"></a></li> 
+                <li class="usernames"><a href="http://www.gmail.com/"target="_blank"><p>hansonlau7@gmail.com</p></a></li>
+            </div> 
+            <div class="git">
+                <li class="logos"><a href="https://github.com/HansonLau"target="_blank"><img src="images/git.png"></a></li> 
+                <li class="usernames"><a href="https://github.com/HansonLau"target="_blank"><p>HansonLau</p></a></li>
+            </div>
+        </ul>
+ 
+        
+        <hr id="education">  
+ 
+        <!-- add schools attended and attending, high school gpa stats-->
+        <div class="education">
+ 
+            <h1 class="educationTitle">Education</h1>
+            <p class="educationText">I have attended Creekside Elementary School, Diablo Vista Middle School, and Monte Vista High School. I will be a student at UC Davis in the fall. I have taken 8 AP courses in my high school career. </p>
+ 
+        </div>
+ 
+        <div class="highschoolContainer">
+ 
+            <div class="apSection">
+                <h2 class="ap-title">List of AP courses taken:</h2>
                 <ul class="ap-list">
                     <li>Computer Science Principles</li>
                     <li>World History</li>
@@ -83,46 +114,73 @@
                     <li>Physics</li>
                     <li>Comparative Government</li>
                 </ul>
-        
-                <ul class="gpa">
+            </div>
+ 
+            <hr>
+ 
+            <div class="hsgpaSection">
+                <h2 class="hsgpa-title">Highschool GPA:</h2>
+                <ul class="hsgpa">
                     <li>Cumulative Unweighted: 3.98</li>
                     <li>Cumulative Weighted: 4.39</li>
                     <li>Cumulative Weighted (Grade 10-12): 4.57</li>
                 </ul>
             </div>
-
+ 
+            <hr>
+ 
+            <div class="schoolsAttended">
+                <h2>Schools attended </h2>
+            </div>
+ 
             <ul class="schools">
-                <li class="school" id="C"><a href="https://ces-srvusd-ca.schoolloop.com/"target="_blank">Creekside</a></li>
-                <li class="school" id="DV"><a href="https://dvms.schoolloop.com/"target="_blank">Diablo Vista</a></li>   
-                <li class="school" id="MV"><a href="https://mvhs.schoolloop.com/"target="_blank">Monte Vista</a></li>
+                <li class="cr"><a href="https://ces-srvusd-ca.schoolloop.com/"target="_blank">Creekside</a></li>
+                <li class="dv"><a href="https://dvms.schoolloop.com/"target="_blank">Diablo Vista</a></li>
+                <li class="mv"><a href="https://mvhs.schoolloop.com/"target="_blank">Monte Vista</a></li>
             </ul>
-
-        </section>
-
-        <section class="experience">
-            <h1 id="experience">Experience</h1>
-            <p> I had the opportunity to tutor a kindergartener under the UNICEF club as a volunteer. Helping the student with the basics of math, comparisons, and sight words. After the volunteer opportunity, I was able to become a private tutor for the kindergartener and begin to tutor for a rate. I have taken an internship with UC Berkeley ATDP as a teaching assistant. The course taught middle school students the basics of Python. I was responsible for a group of 5 students lecturing them and helping them with coding assignments.</p>
-
-            <li id="B"><a href="https://atdp.berkeley.edu/"target="_blank">UC Berkeley ATDP</a></li>
-
-        </section>
-
-        <section class="extra">
-            <h1 id="extra">Extra</h1>
-            <p> I have been a practitioner of Matsubayashi Shorin-ryu Karate since my freshman year of high school. I am currently a 2nd-kyu brown belt, certified by Sensei Eihachi Ota, Hanshi, 10th Dan. I really enjoy playing badminton and have started a process to create a badminton team for Monte Vista High School. The team has been planned to start Spring of 2021, but the COVID-19 pandemic may be in the way of it happening. The team will happen whenever it will be appropriate.</p>
-
-            <li id="S"><a href="https://hansonlau.github.io/shorin-ryu/"target="_blank">Shorin-ryu</a></li>
-        
-        </section>  
-
-        <div class="footer">
-
-            <p>2021 &#169; Hanson Lau</p>
-    
         </div>
+ 
+        <hr id="experience">  
+ 
+        <!-- work experience, karate, tutoring-->
+        <div class="experience">
+ 
+            <h1 class="experienceTitle">Experience</h1>
+ 
+            <div class="experienceText">
+                <p>I had the opportunity to tutor a kindergartener under the UNICEF club as a volunteer. Helping the student with the basics of math, comparisons, and sight words. After the volunteer opportunity, I was able to become a private tutor for the kindergartener and begin to tutor for a rate. I have taken an internship with UC Berkeley ATDP as a teaching assistant. The course taught middle school students the basics of Python. I worked for the program two times with different instructors.</p>
+                
+                <br>
+ 
+                <p>I have been a practitioner of Matsubayashi Shorin-Ryu Karate since my freshman year of high school. I am currently a 2nd-kyu brown belt, certified by Sensei Eihachi Ota, Hanshi, 10th Dan. Using HTML, CSS, and a little JavaScript, I created a website showcasing the katas and history of Matsubayashi Shorin-Ryu</p>
+ 
+            </div>
+ 
+        </div>
+ 
+        <div class="karateContainer">
+ 
+            <div class="karate">
+                <h2 class="expTitle">Karate website:</h2>
+                <a href="https://hansonlau.github.io/shorin-ryu/"target="_blank"><img src="images/karatePic.PNG" alt="karatePic" class="web"></a>
+            </div>
+ 
+            <div class="yt">
+                <h2 class="expTitle">Youtube channel:</h2>
+                <a href="https://www.youtube.com/channel/UCz3DKTeS7mJY6sZfAX2L-Eg"target="_blank"><img src="images/hyt.PNG" alt="karatePic" class="web"></a>
+            </div>
+        </div>
+ 
     </div>
-
-    
-
+ 
+    <div class="footer">
+ 
+        <p>2021 &#169; Hanson Lau</p>
+ 
+    </div>
+ 
+    <!-- script to make the light up nav bar-->
+    <script src="bar.js"> </script>
+ 
 </body>
 </html>
