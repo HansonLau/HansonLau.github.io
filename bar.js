@@ -1,28 +1,5 @@
 // function lights up sections when the scroll 
 // is at that position
-
-const menu = documnet.querySelector('#mobileMenu');
-const items = document.querySelector('.navbarOptions');
-const name = document.querySelector('#name');
-
-const mobileMenu = () => {
-
-    menu.classList.toggle('is-active');
-    items.classList.toggle('active');
-};
-
-menu.addEventListener('click', mobileMenu);
-
-const hideMobileMenu = () => {
-    const menuBars = document.querySelector('.is-active');
-    if (window.innerWidth <= 768 && menuBars) {
-      menu.classList.toggle('is-active');
-      items.classList.remove('active');
-    }
-  };
-  
-  menuLinks.addEventListener('click', hideMobileMenu);
-  navLogo.addEventListener('click', hideMobileMenu);
  
 const lightUp = () => {
  

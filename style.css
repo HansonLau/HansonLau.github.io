@@ -135,7 +135,7 @@
     .menuButton .bar {
         display: block;
         cursor: pointer;
-      }
+    }
 
     #mobileMenu.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
