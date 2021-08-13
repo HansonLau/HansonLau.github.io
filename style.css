@@ -75,6 +75,80 @@
 }
  
 /* screen break adjustments for navbar */
+
+
+@media screen and (max-width: 960px){
+
+    .navbarOptions {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+      }
+    
+      .navbarOptions.active {
+        background: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+      }
+
+      #name {
+        padding-left: 25px;
+      }
+
+      .menuButton .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+      }
+
+      .items{
+          width: 100%;
+      }
+
+      .links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+      }
+
+    /* Mobile menu (the three lines) */
+    #mobileMenu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .menuButton .bar {
+        display: block;
+        cursor: pointer;
+      }
+
+    #mobileMenu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    }
+    
+    #mobileMenu.is-active .bar:nth-child(2) {
+    opacity: 0;
+    }
+
+    #mobileMenu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    }
+}
  
  
 /* header (name, picture, socials) added in from old code*/
