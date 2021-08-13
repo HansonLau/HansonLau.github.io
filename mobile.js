@@ -2,13 +2,12 @@ const menu = documnet.querySelector('#mobileMenu');
 const items = document.querySelector('.navbarOptions');
 const home = document.querySelector('#name');
 
-const mobileMenu = () => {
-
+const openMenu = () => {
     menu.classList.toggle('is-active');
     items.classList.toggle('active');
 };
 
-menu.addEventListener('click', mobileMenu);
+menu.addEventListener('click', openMenu);
 
 const hideMobileMenu = () => {
     const menuBars = document.querySelector('.is-active');
