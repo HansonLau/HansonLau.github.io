@@ -99,9 +99,9 @@
         opacity: 1;
         transition: all 0.5s ease;
         z-index: -1;
-      }
-    
-      .navbarOptions.active {
+    }
+
+    .navbarOptions.active {
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -109,30 +109,30 @@
         z-index: 99;
         height: 60vh;
         font-size: 1.6rem;
-      }
+    }
 
-      #name {
+    #name {
         padding-left: 25px;
-      }
+    }
 
-      .menuButton .bar {
+    .menuButton .bar {
         width: 25px;
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease-in-out;
         background: #fff;
-      }
+    }
 
-      .items{
-          width: 100%;
-      }
+    .items{
+            width: 100%;
+    }
 
-      .links{
+    .links{
         text-align: center;
         padding: 2rem;
         width: 100%;
         display: table;
-      }
+    }
 
     /* Mobile menu (the three lines) */
     #mobileMenu {
