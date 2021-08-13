@@ -79,15 +79,16 @@
 
 @media screen and (max-width: 960px){
 
+    
     .navbarContainer {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    padding: 0;
-  }
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
 
     .navbarOptions {
         display: grid;
@@ -408,6 +409,14 @@ hr{
     width: 100%;
  
 }
+
+.hsgpa-title{
+    font-size: 2rem;
+}
+
+.ap-title{
+    font-size: 2rem;
+}
  
 .ap-list{
     list-style-type: none;
@@ -426,6 +435,7 @@ hr{
 .schoolsAttended{
     margin-top: 3rem;
     padding: 0 4rem;
+    font-size: 1.5rem;
     color: white;
     justify-content: space-evenly;
     display: flex;
@@ -550,6 +560,7 @@ hr{
 }
  
 .expTitle{
+    font-size: 200%;
     color:white;
 }
  
@@ -582,6 +593,96 @@ hr{
         font-size: 1rem;;
     }
  
+}
+
+@media screen and (max-width: 960px){
+
+    .name{
+        font-size: 300%;
+    }
+
+    .aboutMe{
+        font-size: 2rem;
+    }
+
+    .educationTitle{
+        font-size: 2rem;
+    }
+
+    .experienceTitle{
+        font-size: 2rem;
+    }
+
+    .aboutText{
+        font-size: 1rem;
+    }
+
+    .educationText{
+        font-size: 1rem;
+    }
+
+    .experienceText{
+        font-size: 1rem;
+    }
+
+    .expTitle{
+        font-size: 1rem;
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .ap-list{
+            font-size: .6rem;
+        }
+         
+        .hsgpa{
+            font-size: .6rem;
+        }
+
+        .schoolsAttended{
+            font-size: .6rem;
+        }
+
+        .hsgpa-title{
+            font-size: .8rem;
+        }
+
+        .ap-title{
+            font-size: .8rem;
+        }
+
+        .name{
+            font-size: 300%;
+        }
+    
+        .aboutMe{
+            font-size: .8rem;
+        }
+    
+        .educationTitle{
+            font-size: .8rem;
+        }
+    
+        .experienceTitle{
+            font-size: .8rem;
+        }
+    
+        .aboutText{
+            font-size: .5rem;
+        }
+    
+        .educationText{
+            font-size: .5rem;
+        }
+    
+        .experienceText{
+            font-size: .5rem;
+        }
+    
+        .expTitle{
+            font-size: .8rem;
+        }
+    }
 }
  
 /* footer */
