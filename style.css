@@ -308,7 +308,7 @@ hr{
     background: rgb(90, 90, 90);
     width: 80%;
     list-style: none;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
  
 .usernames{ 
@@ -625,6 +625,11 @@ hr{
     }
 
     @media screen and (max-width: 400px) {
+
+        .email{
+            margin-right: .5rem;
+            margin-left: .5rem;
+        }
 
         .usernames{
             font-size: .25rem;
