@@ -30,13 +30,8 @@
 }
  
 #name{
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #16e003 0%, #367bfa 100%);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: rgb(71, 231, 71);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     align-items: center;
     cursor: pointer;
