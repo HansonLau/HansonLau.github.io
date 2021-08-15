@@ -489,7 +489,7 @@ hr{
     text-decoration: none;
     color: white;
     background: linear-gradient(to left, rgb(66, 66, 66) 50%, rgb(236, 59, 59) 50%) right;
-    background-size: 201%;
+    background-size: 202%;
     transition: .5s ease-out;
 }
  
