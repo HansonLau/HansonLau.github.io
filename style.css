@@ -626,6 +626,11 @@ hr{
 
     @media screen and (max-width: 400px) {
 
+        .snap{
+            margin-right: .5rem;
+            margin-left: .5rem;
+        }
+
         .email{
             margin-right: .5rem;
             margin-left: .5rem;
