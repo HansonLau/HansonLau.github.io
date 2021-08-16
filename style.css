@@ -623,76 +623,89 @@ hr{
     .expTitle{
         font-size: 1rem;
     }
+}
 
-    @media screen and (max-width: 400px) {
+.secondIMG{
+    display: none;
+}
 
-        .snap{
-            margin-right: .5rem;
-            margin-left: .5rem;
-        }
+@media screen and (max-width: 400px) { /*mobile*/
 
-        .email{
-            margin-right: .5rem;
-            margin-left: .5rem;
-        }
+    .firstIMG{
+        display: none;
+    }
 
-        .usernames{
-            font-size: .25rem;
-        }
+    .secondIMG{
+        display: unset;
+    }
 
-        .ap-list{
-            font-size: .6rem;
-        }
-         
-        .hsgpa{
-            font-size: .6rem;
-        }
+    .snap{
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
 
-        .schoolsAttended{
-            font-size: .6rem;
-        }
+    .email{
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
 
-        .hsgpa-title{
-            font-size: .8rem;
-        }
+    .usernames{
+        font-size: .25rem;
+    }
 
-        .ap-title{
-            font-size: .8rem;
-        }
+    .ap-list{
+        font-size: .6rem;
+    }
+        
+    .hsgpa{
+        font-size: .6rem;
+    }
 
-        .name{
-            font-size: 300%;
-        }
-    
-        .aboutMe{
-            font-size: .8rem;
-        }
-    
-        .educationTitle{
-            font-size: .8rem;
-        }
-    
-        .experienceTitle{
-            font-size: .8rem;
-        }
-    
-        .aboutText{
-            font-size: .5rem;
-        }
-    
-        .educationText{
-            font-size: .5rem;
-        }
-    
-        .experienceText{
-            font-size: .5rem;
-        }
-    
-        .expTitle{
-            font-size: .8rem;
-        }
+    .schoolsAttended{
+        font-size: .6rem;
+    }
+
+    .hsgpa-title{
+        font-size: .8rem;
+    }
+
+    .ap-title{
+        font-size: .8rem;
+    }
+
+    .name{
+        font-size: 300%;
+    }
+
+    .aboutMe{
+        font-size: .8rem;
+    }
+
+    .educationTitle{
+        font-size: .8rem;
+    }
+
+    .experienceTitle{
+        font-size: .8rem;
+    }
+
+    .aboutText{
+        font-size: .5rem;
+    }
+
+    .educationText{
+        font-size: .5rem;
+    }
+
+    .experienceText{
+        font-size: .5rem;
+    }
+
+    .expTitle{
+        font-size: .8rem;
     }
 }
+
  
 /* footer */
 .footer{
