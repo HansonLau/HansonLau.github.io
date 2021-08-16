@@ -629,7 +629,7 @@ hr{
     display: none;
 }
 
-@media screen and (max-width: 400px) { /*mobile*/
+@media screen and (max-width: 500px) { /*mobile*/
 
     .firstIMG{
         display: none;
